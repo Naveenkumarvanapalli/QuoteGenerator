@@ -8,13 +8,13 @@ const loader = document.getElementById("loader");
 let apiQuotes = [];
 
 function loading(){
-    loader.classList.add('show');
+    loader.hidden = false;
     quoteContainer.hidden = true;
 }
 
 function complete(){
     quoteContainer.hidden = false;
-    loader.classList.remove('show');
+    loader.hidden = true;
 }
 // Show New Quote
 function newQuote(){
